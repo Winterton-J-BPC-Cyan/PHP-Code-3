@@ -3,14 +3,13 @@
 <body>
 
 <?php
-$number = 1;
-echo "The first number is $number<br>";
-while ($number < 9) {
-    $number = $number + 1;
-    echo "$number <br>";
-}
-if ($number == 9) {
-    echo "Dammit, I'm like a confused 6";
+$username = $_post['username'];
+$password = $_post['password'];
+    
+if ($username == "Josh" && $password == "123") {
+    echo "Login successful";
+else
+    echo "invalid";
 }
 ?>
 
